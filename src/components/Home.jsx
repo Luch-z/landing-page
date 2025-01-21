@@ -1,4 +1,4 @@
-import { Button, ClientLogo } from "./UIElements";
+import { Button, ClientLogo, FeatureCard } from "./UIElements";
 
 const clients = [
     "public/clients/client (1).svg",
@@ -30,7 +30,9 @@ function Home() {
                             or social media?
                         </p>
                         <div>
-                            <Button>Register</Button>
+                            <a href="">
+                                <Button>Register</Button>
+                            </a>
                         </div>
                     </div>
                     <div className="m-auto">
@@ -48,11 +50,13 @@ function Home() {
                     We have been working with some Fortune 500+ clients
                 </p>
                 <div className="flex justify-between px-24">
-                    {clients.map((src, index) =>(
-                        <ClientLogo key={index} src={src} alt={`Client ${index + 1}`}/>
-                    ))
-                        
-}
+                    {clients.map((src, index) => (
+                        <ClientLogo
+                            key={index}
+                            src={src}
+                            alt={`Client ${index + 1}`}
+                        />
+                    ))}
                 </div>
             </div>
 
@@ -65,46 +69,24 @@ function Home() {
                     <p className="text-1xl">Who is Nextcent suitable for?</p>
                 </div>
                 <div className="flex justify-around">
-                    <div className="w-1/4 shadow-md rounded-md p-3">
-                        <img
-                            className="m-auto"
-                            src="public/manage (1).svg"
-                            alt=""
-                        />
-                        <h1 className="text-3xl whitespace-normal">
-                            Membership Organisations
-                        </h1>
-                        <p>
-                            Our membership management software provides full
-                            automation of membership renewals and payments
-                        </p>
-                    </div>
-                    <div className="w-1/4 shadow-md rounded-md p-3">
-                        <img
-                            className="m-auto"
-                            src="public/manage (2).svg"
-                            alt=""
-                        />
-                        <h1 className="text-3xl whitespace-normal">
-                            National Associations
-                        </h1>
-                        <p>
-                            Our membership management software provides full
-                            automation of membership renewals and payments
-                        </p>
-                    </div>
-                    <div className="w-1/4 shadow-md rounded-md p-3">
-                        <img
-                            className="m-auto"
-                            src="public/manage (3).svg"
-                            alt=""
-                        />
-                        <h1 className="text-3xl">Clubs And Groups</h1>
-                        <p>
-                            Our membership management software provides full
-                            automation of membership renewals and payments
-                        </p>
-                    </div>
+                    <FeatureCard
+                        imgSrc="public/manage (1).svg"
+                        title="Membership Organisations"
+                        description="Our membership management software provides full
+                         automation of membership renewals and payments"
+                    />
+                    <FeatureCard
+                        imgSrc="public/manage (2).svg"
+                        title="National Associations"
+                        description="Our membership management software provides full
+                         automation of membership renewals and payments"
+                    />
+                    <FeatureCard
+                        imgSrc="public/manage (3).svg"
+                        title="Clubs And Groups"
+                        description="Our membership management software provides full
+                            automation of membership renewals and payments"
+                    />
                 </div>
             </div>
         </div>
