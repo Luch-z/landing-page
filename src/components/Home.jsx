@@ -1,4 +1,14 @@
-import Button from "./Button";
+import { Button, ClientLogo } from "./UIElements";
+
+const clients = [
+    "public/clients/client (1).svg",
+    "public/clients/client (2).svg",
+    "public/clients/client (3).svg",
+    "public/clients/client (4).svg",
+    "public/clients/client (5).svg",
+    "public/clients/client (6).svg",
+    "public/clients/client (7).svg",
+];
 
 function Home() {
     return (
@@ -38,13 +48,11 @@ function Home() {
                     We have been working with some Fortune 500+ clients
                 </p>
                 <div className="flex justify-between px-24">
-                    <img src="public/clients/client (1).svg" alt="" />
-                    <img src="public/clients/client (2).svg" alt="" />
-                    <img src="public/clients/client (3).svg" alt="" />
-                    <img src="public/clients/client (4).svg" alt="" />
-                    <img src="public/clients/client (5).svg" alt="" />
-                    <img src="public/clients/client (6).svg" alt="" />
-                    <img src="public/clients/client (7).svg" alt="" />
+                    {clients.map((src, index) =>(
+                        <ClientLogo key={index} src={src} alt={`Client ${index + 1}`}/>
+                    ))
+                        
+}
                 </div>
             </div>
 
