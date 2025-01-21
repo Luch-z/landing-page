@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { Button } from "./UIElements";
 
 function Header() {
     return (
@@ -18,9 +18,7 @@ function Header() {
             </div>
             <div className="flex gap-5">
                 <p className="text-[#4CAF4F] m-auto">Login</p>
-                <Button>
-                    Sign up
-                </Button>
+                <Button>Sign up</Button>
             </div>
         </div>
     );
