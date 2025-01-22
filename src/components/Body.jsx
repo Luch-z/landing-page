@@ -128,7 +128,7 @@ function Body() {
             </div>
 
             <div className="text-center flex flex-col gap-36 mb-16">
-                <div className="">
+                <div>
                     <h1>Caring is the new marketing</h1>
                     <p className="w-3/6 m-auto">
                         The Nexcent blog is the best place to read about the
@@ -181,6 +181,11 @@ function Body() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="bg-primary p-10 flex flex-col items-center gap-7">
+                <h1 className="text-6xl font-bold w-3/5 text-center">Pellentesque suscipit fringilla libero eu.</h1>
+                <Button className={"flex gap-2"}>Get a Demo <img className="mt-1" src="public/arrow-white.svg" alt="" /></Button>
             </div>
         </div>
     );
