@@ -1,20 +1,10 @@
 import { Button, ClientLogo, FeatureCard } from "./UIElements";
 
-const clients = [
-    "public/clients/client (1).svg",
-    "public/clients/client (2).svg",
-    "public/clients/client (3).svg",
-    "public/clients/client (4).svg",
-    "public/clients/client (5).svg",
-    "public/clients/client (6).svg",
-    "public/clients/client (7).svg",
-];
-
 function Home() {
     return (
         <div className="flex flex-col gap-7 pb-10">
             <div>
-                <div className="flex bg-[#F5F7FA] p-14">
+                <div className="flex bg-primary p-14">
                     <div className="flex flex-col m-auto gap-5">
                         <div>
                             <h1 className="text-5xl text-gray-950">
@@ -39,22 +29,22 @@ function Home() {
                         <img src="public/Illustration.png" alt="" />
                     </div>
                 </div>
-                <div className="bg-[#F5F7FA] pb-3">
+                <div className="bg-primary pb-3">
                     <img className="m-auto " src="public/Dot.png" alt="" />
                 </div>
             </div>
 
             <div className="text-center gap-3 flex flex-col">
-                <h1 className="text-4xl text-bold">Our Clients</h1>
+                <h1>Our Clients</h1>
                 <p className="text-1xl">
                     We have been working with some Fortune 500+ clients
                 </p>
                 <div className="flex justify-between px-24">
-                    {clients.map((src, index) => (
+                    {Array.from({ length: 7}, (_, i) => (
                         <ClientLogo
-                            key={index}
-                            src={src}
-                            alt={`Client ${index + 1}`}
+                            key={i}
+                            src={`public/clients/client (${i + 1}).svg`}
+                            alt={`Client ${i + 1}`}
                         />
                     ))}
                 </div>
@@ -62,10 +52,8 @@ function Home() {
 
             <div className="text-center gap-10 flex flex-col">
                 <div>
-                    <h1 className="text-4xl text-bold">
-                        Manage your entire community
-                    </h1>
-                    <h1 className="text-4xl text-bold">in a single system</h1>
+                    <h1>Manage your entire community</h1>
+                    <h1>in a single system</h1>
                     <p className="text-1xl">Who is Nextcent suitable for?</p>
                 </div>
                 <div className="flex justify-around">

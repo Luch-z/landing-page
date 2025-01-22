@@ -2,7 +2,7 @@ import { Button } from "./UIElements";
 
 function Header() {
     return (
-        <div className="flex justify-between px-10 py-5 bg-[#F5F7FA]">
+        <div className="flex justify-between px-10 py-5 bg-primary">
             <div className="flex">
                 <a href=""><img src="/public/Logo.svg" alt="" /></a>
             </div>
