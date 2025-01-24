@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className="flex flex-col gap-7 pb-10">
             <div>
-                <div className="flex bg-primary p-14">
+                <div className="flex bg-primary p-3 md:p-14">
                     <div className="flex flex-col m-auto gap-5">
                         <div>
                             <h1 className="text-5xl text-gray-950">
@@ -39,7 +39,7 @@ function Home() {
                 <p className="text-1xl">
                     We have been working with some Fortune 500+ clients
                 </p>
-                <div className="flex justify-between px-24">
+                <div className="flex justify-between px-2 md:px-24">
                     {Array.from({ length: 7}, (_, i) => (
                         <ClientLogo
                             key={i}
@@ -56,7 +56,7 @@ function Home() {
                     <h1>in a single system</h1>
                     <p className="text-1xl">Who is Nextcent suitable for?</p>
                 </div>
-                <div className="flex justify-around">
+                <div className="flex flex-col md:flex-row md:justify-around mx-7 md:mx-0 gap-5 md:gap-0">
                     <FeatureCard
                         imgSrc="public/manage (1).svg"
                         title="Membership Organisations"

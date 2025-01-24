@@ -15,7 +15,7 @@ export function ClientLogo({ src, alt }) {
 
 export function FeatureCard({ imgSrc, title, description }) {
     return (
-        <div className="w-1/4 shadow-md rounded-md p-3">
+        <div className="md:w-1/4 shadow-md rounded-md p-3">
             <img className="m-auto" src={imgSrc} alt="" />
             <h1 className="text-3xl whitespace-normal">{title}</h1>
             <p>{description}</p>

@@ -3,11 +3,11 @@ import { Button } from "./UIElements";
 function Body() {
     return (
         <div className="flex flex-col gap-7">
-            <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row justify-center">
                 <div>
                     <img src="public/frame 35.svg" alt="" />
                 </div>
-                <div className="w-2/5 my-auto gap-5 flex flex-col">
+                <div className="w-11/12 md:w-2/5 m-auto gap-5 flex flex-col">
                     <h1>The unseen of spending three years at Pixelgrade</h1>
                     <p className="max-w-3xl">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -24,13 +24,13 @@ function Body() {
                 </div>
             </div>
 
-            <div className="bg-primary flex justify-center p-16">
+            <div className="bg-primary flex flex-col gap-6 md:gap-0 md:flex-row justify-center md:p-16">
                 <div className="m-auto">
                     <h1>Helping a local</h1>
                     <h1 className="text-[#4CAF4F]">business reinvent itself</h1>
                     <p>We reached here with our hard work and dedication</p>
                 </div>
-                <div className="m-auto grid grid-cols-2 gap-5">
+                <div className="m-auto grid gap-5 gap-x-8  grid-cols-2">
                     {[
                         {
                             img: "public/business (1).svg",
@@ -54,9 +54,11 @@ function Body() {
                         },
                     ].map((item, index) => (
                         <div key={index} className="flex gap-3">
-                            <img src={item.img} alt="" className="w-16 h-16" />
+                            <img src={item.img} alt="" />
                             <div>
-                                <h1>{item.value}</h1>
+                                <h1 className="text-xl md:text-4xl">
+                                    {item.value}
+                                </h1>
                                 <p>{item.label}</p>
                             </div>
                         </div>
@@ -64,13 +66,13 @@ function Body() {
                 </div>
             </div>
 
-            <div className="flex justify-center ">
+            <div className="flex flex-col md:flex-row justify-center ">
                 <img className="m-auto" src="public/pana.svg" alt="" />
-                <div className="flex flex-col m-auto gap-5 w-2/4">
-                    <h1 className="w-2/3">
+                <div className="flex flex-col m-auto gap-5 md:w-2/4 pl-3 md:pl-0">
+                    <h1 className="md:w-2/3">
                         How to design your site footer like we did
                     </h1>
-                    <p>
+                    <p className="mr-2 md:mr-0">
                         Donec a eros justo. Fusce egestas tristique ultrices.
                         Nam tempor, augue nec tincidunt molestie, massa nunc
                         varius arcu, at scelerisque elit erat a magna. Donec
@@ -91,7 +93,7 @@ function Body() {
 
             <div className="flex justify-center bg-primary p-5">
                 <div className="w-1/5"></div>
-                <div className="flex flex-col w-4/6 gap-2 ml-6">
+                <div className="flex flex-col md:w-4/6 gap-2 ml-6">
                     <p>
                         Maecenas dignissim justo eget nulla rutrum molestie.
                         Maecenas lobortis sem dui, vel rutrum risus tincidunt
@@ -111,18 +113,29 @@ function Body() {
                     <p className="text-[#89939E] mb-3">
                         British Dragon Boat Racing Association
                     </p>
-                    <div className="flex gap-4">
-                        {Array.from({ length: 6 }, (_, i) => (
-                            <img
-                                key={i}
-                                src={`public/clients/client (${i + 1}).svg`}
-                                alt={`Client ${i + 1}`}
-                            />
-                        ))}
-                        <h2 className="text-[#4CAF4F] my-auto">
-                            Meet all customers
-                        </h2>
-                        <img className="mt-1" src="public/arrow.svg" alt="" />
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="grid grid-cols-3 md:flex gap-4">
+                            {Array.from({ length: 6 }, (_, i) => (
+                                <img
+                                    key={i}
+                                    src={`public/clients/client (${i + 1}).svg`}
+                                    alt={`Client ${i + 1}`}
+                                />
+                            ))}
+                        </div>
+
+                        <a href="">
+                            <div className="flex gap-2 w-3/12">
+                                <h2 className="text-[#4CAF4F] my-auto">
+                                    Meet all customers
+                                </h2>
+                                <img
+                                    className="mt-1"
+                                    src="public/arrow.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -130,15 +143,15 @@ function Body() {
             <div className="text-center flex flex-col gap-36 mb-16">
                 <div>
                     <h1>Caring is the new marketing</h1>
-                    <p className="w-3/6 m-auto">
+                    <p className="p-2 md:w-3/6 md:p-0 m-auto">
                         The Nexcent blog is the best place to read about the
                         latest membership insights, trends and more. See whos
                         joining the community, read about how our community are
                         increasing their membership income and lots more.
                     </p>
                 </div>
-                <div className="flex justify-center gap-14 ">
-                    <div className="w-1/4 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
+                <div className="flex flex-col md:flex-row justify-center gap-14">
+                    <div className="mx-5 md:w-1/4 md:mx-0 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
                         <h2 className="text-[#717171]">
                             Creating Streamlined Safeguarding Processes with
                             OneRen
@@ -152,7 +165,7 @@ function Body() {
                             />
                         </div>
                     </div>
-                    <div className="w-1/4 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
+                    <div className="mx-5 md:w-1/4 md:mx-0 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
                         <h2 className="text-[#717171]">
                             What are your safeguarding responsibilities and how
                             can you manage them?
@@ -166,7 +179,7 @@ function Body() {
                             />
                         </div>
                     </div>
-                    <div className="w-1/4 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
+                    <div className="mx-5 md:w-1/4 md:mx-0 bg-primary p-5 rounded-xl flex flex-col gap-5 shadow-md">
                         <h2 className="text-[#717171]">
                             Revamping the Membership Model with Triathlon
                             Australia
@@ -184,8 +197,13 @@ function Body() {
             </div>
 
             <div className="bg-primary p-10 flex flex-col items-center gap-7">
-                <h1 className="text-6xl font-bold w-3/5 text-center">Pellentesque suscipit fringilla libero eu.</h1>
-                <Button className={"flex gap-2"}>Get a Demo <img className="mt-1" src="public/arrow-white.svg" alt="" /></Button>
+                <h1 className="md:text-6xl font-bold md:w-3/5 text-center">
+                    Pellentesque suscipit fringilla libero eu.
+                </h1>
+                <Button className={"flex gap-2"}>
+                    Get a Demo{" "}
+                    <img className="mt-1" src="public/arrow-white.svg" alt="" />
+                </Button>
             </div>
         </div>
     );

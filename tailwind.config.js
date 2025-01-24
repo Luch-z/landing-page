@@ -6,6 +6,9 @@ export default {
             colors:{
                 primary: "#F5F7FA",
                 secondary: "#263238",
+            },
+            fontSize: {
+                
             }
         },
     },
