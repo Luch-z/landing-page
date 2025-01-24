@@ -5,7 +5,7 @@ function Header() {
         <div className="flex justify-between px-5 py-5 bg-primary gap-5">
             <div className="flex items-center">
                 <a href="">
-                    <img src="/public/Logo.svg" alt="" />
+                    <img src="Logo.svg" alt="" />
                 </a>
             </div>
             <div className="m-auto">

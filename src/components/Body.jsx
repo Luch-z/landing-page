@@ -5,7 +5,7 @@ function Body() {
         <div className="flex flex-col gap-7">
             <div className="flex flex-col md:flex-row justify-center">
                 <div>
-                    <img src="public/frame 35.svg" alt="" />
+                    <img src="frame 35.svg" alt="" />
                 </div>
                 <div className="w-11/12 md:w-2/5 m-auto gap-5 flex flex-col">
                     <h1>The unseen of spending three years at Pixelgrade</h1>
@@ -33,22 +33,22 @@ function Body() {
                 <div className="m-auto grid gap-5 gap-x-8  grid-cols-2">
                     {[
                         {
-                            img: "public/business (1).svg",
+                            img: "business (1).svg",
                             value: "2,245,341",
                             label: "Members",
                         },
                         {
-                            img: "public/business (1).svg",
+                            img: "business (1).svg",
                             value: "46,328",
                             label: "Clubs",
                         },
                         {
-                            img: "public/business (3).svg",
+                            img: "business (3).svg",
                             value: "828,867",
                             label: "Event Bookings",
                         },
                         {
-                            img: "public/business (4).svg",
+                            img: "business (4).svg",
                             value: "1,926,436",
                             label: "Payments",
                         },
@@ -67,7 +67,7 @@ function Body() {
             </div>
 
             <div className="flex flex-col md:flex-row justify-center ">
-                <img className="m-auto" src="public/pana.svg" alt="" />
+                <img className="m-auto" src="pana.svg" alt="" />
                 <div className="flex flex-col m-auto gap-5 md:w-2/4 pl-3 md:pl-0">
                     <h1 className="md:w-2/3">
                         How to design your site footer like we did
@@ -118,7 +118,7 @@ function Body() {
                             {Array.from({ length: 6 }, (_, i) => (
                                 <img
                                     key={i}
-                                    src={`public/clients/client (${i + 1}).svg`}
+                                    src={`clients/client (${i + 1}).svg`}
                                     alt={`Client ${i + 1}`}
                                 />
                             ))}
@@ -131,7 +131,7 @@ function Body() {
                                 </h2>
                                 <img
                                     className="mt-1"
-                                    src="public/arrow.svg"
+                                    src="arrow.svg"
                                     alt=""
                                 />
                             </div>
@@ -160,7 +160,7 @@ function Body() {
                             <h2 className="text-[#4CAF4F]">Readmore</h2>
                             <img
                                 className="mt-1"
-                                src="public/arrow.svg"
+                                src="arrow.svg"
                                 alt=""
                             />
                         </div>
@@ -174,7 +174,7 @@ function Body() {
                             <h2 className="text-[#4CAF4F]">Readmore</h2>
                             <img
                                 className="mt-1"
-                                src="public/arrow.svg"
+                                src="arrow.svg"
                                 alt=""
                             />
                         </div>
@@ -188,7 +188,7 @@ function Body() {
                             <h2 className="text-[#4CAF4F]">Readmore</h2>
                             <img
                                 className="mt-1"
-                                src="public/arrow.svg"
+                                src="arrow.svg"
                                 alt=""
                             />
                         </div>
@@ -202,7 +202,7 @@ function Body() {
                 </h1>
                 <Button className={"flex gap-2"}>
                     Get a Demo{" "}
-                    <img className="mt-1" src="public/arrow-white.svg" alt="" />
+                    <img className="mt-1" src="arrow-white.svg" alt="" />
                 </Button>
             </div>
         </div>

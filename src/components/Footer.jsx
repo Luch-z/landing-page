@@ -2,23 +2,23 @@ function Footer() {
     return (
         <div className="text-white bg-secondary flex flex-col gap-5 md:flex-row py-12 px-3 justify-around">
             <div className="flex flex-col gap-8">
-                <img className="w-2/4 md:w-full" src="public/Logo-white.svg" alt="" />
+                <img className="w-2/4 md:w-full" src="Logo-white.svg" alt="" />
                 <div>
                     <p>Copyright © 2020 Nexcent ltd.</p>
                     <p>All rights reserved</p>
                 </div>
                 <div className="flex gap-3">
                     <a href="">
-                        <img src="public/social/social (1).svg" alt="" />
+                        <img src="social/social (1).svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="public/social/social (2).svg" alt="" />
+                        <img src="social/social (2).svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="public/social/social (3).svg" alt="" />
+                        <img src="social/social (3).svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="public/social/social (4).svg" alt="" />
+                        <img src="social/social (4).svg" alt="" />
                     </a>
                 </div>
             </div>
@@ -72,7 +72,7 @@ function Footer() {
                         className="w-10 h-10 flex justify-center items-center border-none focus:outline-none"
                         type="submit"
                     >
-                        <img src="public/send.svg" alt="" />
+                        <img src="send.svg" alt="" />
                     </button>
                 </div>
             </div>

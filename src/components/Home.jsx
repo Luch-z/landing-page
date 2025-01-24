@@ -26,11 +26,11 @@ function Home() {
                         </div>
                     </div>
                     <div className="m-auto">
-                        <img src="public/Illustration.png" alt="" />
+                        <img src="Illustration.png" alt="" />
                     </div>
                 </div>
                 <div className="bg-primary pb-3">
-                    <img className="m-auto " src="public/Dot.png" alt="" />
+                    <img className="m-auto " src="Dot.png" alt="" />
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ function Home() {
                     {Array.from({ length: 7}, (_, i) => (
                         <ClientLogo
                             key={i}
-                            src={`public/clients/client (${i + 1}).svg`}
+                            src={`clients/client (${i + 1}).svg`}
                             alt={`Client ${i + 1}`}
                         />
                     ))}
@@ -58,19 +58,19 @@ function Home() {
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-around mx-7 md:mx-0 gap-5 md:gap-0">
                     <FeatureCard
-                        imgSrc="public/manage (1).svg"
+                        imgSrc="manage (1).svg"
                         title="Membership Organisations"
                         description="Our membership management software provides full
                          automation of membership renewals and payments"
                     />
                     <FeatureCard
-                        imgSrc="public/manage (2).svg"
+                        imgSrc="manage (2).svg"
                         title="National Associations"
                         description="Our membership management software provides full
                          automation of membership renewals and payments"
                     />
                     <FeatureCard
-                        imgSrc="public/manage (3).svg"
+                        imgSrc="manage (3).svg"
                         title="Clubs And Groups"
                         description="Our membership management software provides full
                             automation of membership renewals and payments"
